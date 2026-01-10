@@ -10,10 +10,13 @@ jobs:
           uses: actions/checkout@v6
 
         - name: welcome message
-          run: echo "My First GitHub Actions Workflow"
+          run: |
+               echo "My First GitHub Actions Workflow"
+               ls -ltra
+               cat README.md
 
-        - name: List files
-          run: ls 
+        #to - name: List files
+        #  run: ls 
 
-        - name: Read file
-          run: cat README.md
+        #- name: Read file
+        #  run: cat README.md
